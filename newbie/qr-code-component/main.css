@@ -1,0 +1,66 @@
+:root {
+  --main-bg-color: hsl(212, 45%, 89%);
+  --heading-text-color: hsl(218, 44%, 22%);
+  --paragraph-text-color: hsl(220, 15%, 55%);
+  --card-background-color: hsl(0, 0%, 100%);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  min-height: 100vh;
+  background: var(--main-bg-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  min-height: 500px;
+  background: var(--card-background-color);
+  border-radius: 16px;
+  font-family: 'Outfit', sans-serif;
+}
+
+img {
+  padding: 16px;
+  border-radius: 26px;
+}
+
+img+h2 {
+  padding: 0 16px;
+  margin: 8px;
+  color: var(--heading-text-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+p {
+  padding: 0 32px;
+  color: var(--paragraph-text-color);
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1440px) {
+  .container {
+    max-width: 300px;
+    margin: 0 16px;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  .container {
+    max-width: 256px;
+    margin: 0 16px;
+  }
+}
