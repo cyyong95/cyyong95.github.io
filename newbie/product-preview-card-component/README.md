@@ -32,7 +32,7 @@ Mobile view
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://cyyong95.github.io/newbie/product-preview-card-component/)
 
 ## My process
 
