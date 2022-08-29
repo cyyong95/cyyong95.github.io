@@ -21,7 +21,6 @@ Mobile view
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Github pages](https://cyyong95.github.io/newbie/qr-code-component/)
 
 ### Built with
