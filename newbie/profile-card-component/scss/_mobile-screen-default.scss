@@ -1,0 +1,111 @@
+@use "variables";
+
+/* Profile component styling starts here */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background:
+    url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg"),
+    variables.$color-cyan;
+  background-repeat: no-repeat;
+  background-size: 55vmax;
+  background-position:
+    left -30vmax top -20vmax,
+    right -30vmax bottom -20vmax;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 250px;
+  margin: 1rem;
+  border-radius: variables.$border-radius-default;
+  font-family: variables.$font-family-default;
+  box-shadow: 2px 2px 16px hsl(0, 0%, 40%);
+
+  .card-top {
+    position: relative;
+    width: 100%;
+    min-height: 6em;
+    border-top-left-radius: variables.$border-radius-default;
+    border-top-right-radius: variables.$border-radius-default;
+    background: url("../images/bg-pattern-card.svg");
+
+    img {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      bottom: -3rem;
+      text-align: center;
+      border-radius: 50%;
+    }
+  }
+
+  .card-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 10em;
+    border-top: 1px solid variables.$color-dark-grey;
+    background: white;
+    color: variables.$color-grey-blue;
+    padding-top: 3rem;
+
+    .card-middle_name {
+      font-size: variables.$font-size-large;
+      font-weight: variables.$font-weight-bold;
+      color: variables.$color-grey-blue-dark;
+
+      span {
+        font-size: variables.$font-size-small;
+        font-weight: variables.$font-weight-default;
+      }
+    }
+
+    .card-middle_location {
+      margin-top: 0.5rem;
+      font-size: 0.7rem;
+    }
+  }
+
+  .card-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 6em;
+    border-top: 1px solid variables.$color-dark-grey;
+    background: white;
+    border-bottom-right-radius: variables.$border-radius-default;
+    border-bottom-left-radius: variables.$border-radius-default;
+    padding: 1rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h2 {
+        font-weight: variables.$font-weight-bold;
+        color: variables.$color-grey-blue-dark;
+      }
+
+      p {
+        padding: 0.5em;
+        font-size: 0.7rem;
+        letter-spacing: 0.2em;
+        color: variables.$color-grey-blue;
+      }
+    }
+  }
+}
